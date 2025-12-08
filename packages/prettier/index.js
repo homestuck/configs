@@ -1,0 +1,51 @@
+/** @typedef {import("prettier").Config} PrettierConfig */
+/** @typedef {import("@ianvs/prettier-plugin-sort-imports").PluginConfig} SortImportsConfig */
+/** @typedef {import("@prettier/plugin-xml")} XMLConfig */
+
+/** @type { PrettierConfig | SortImportsConfig | XMLConfig } */
+module.exports = {
+  arrowParens: 'always',
+  bracketSameLine: true,
+  bracketSpacing: true,
+  endOfLine: 'lf',
+  importOrder: [
+    '<TYPES>',
+    '^(react/(.*)$)|^(react$)',
+    '^(next/(.*)$)|^(next$)',
+    '<THIRD_PARTY_MODULES>',
+    '',
+    '<TYPES>^@homestuck',
+    '^@homestuck/(.*)$',
+    '',
+    '<TYPES>^#',
+    '^#/(.*)$',
+    '',
+    '<TYPES>^[.|..|~]',
+    '^~/',
+    '^[../]',
+    '^[./]',
+  ],
+  importOrderCaseSensitive: true,
+  importOrderParserPlugins: ['typescript', 'jsx', 'decorators-legacy'],
+  importOrderTypeScriptVersion: '5.9.3',
+  jsonRecursiveSort: true,
+  plugins: [
+    require.resolve('@ianvs/prettier-plugin-sort-imports'),
+    require.resolve('@prettier/plugin-xml'),
+    require.resolve('prettier-plugin-packagejson'),
+    require.resolve('prettier-plugin-sort-json'),
+    require.resolve('prettier-plugin-tailwindcss'),
+  ],
+  printWidth: 80,
+  proseWrap: 'preserve',
+  semi: false,
+  singleQuote: true,
+  tabWidth: 2,
+  trailingComma: 'all',
+  useTabs: false,
+  tailwindFunctions: ['classNames', 'clsx', 'cn', 'cva', 'tv', 'tw', 'twMerge'],
+  xmlSelfClosingSpace: true,
+  xmlSortAttributesByKey: true,
+  xmlQuoteAttributes: 'double',
+  xmlWhitespaceSensitivity: 'preserve',
+}

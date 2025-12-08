@@ -1,0 +1,61 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/docker-outside-of-docker
+{
+  "containerEnv": {},
+  // Configure tool-specific properties.
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "DavidAnson.vscode-markdownlint",
+        "Orta.vscode-jest",
+        "YoavBls.pretty-ts-errors",
+        "amazonwebservices.aws-toolkit-vscode",
+        "csstools.postcss",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "formulahendry.auto-rename-tag",
+        "ghmcadams.lintlens",
+        "meganrogge.template-string-converter",
+        "mikestead.dotenv",
+        "ms-vsliveshare.vsliveshare",
+        "naumovs.color-highlight",
+        "pflannery.vscode-versionlens",
+        "streetsidesoftware.code-spell-checker",
+        "unifiedjs.vscode-mdx",
+        "wix.vscode-import-cost"
+      ],
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "zsh",
+        "terminal.integrated.fontFamily": "FiraCode Nerd Font Mono"
+      }
+    }
+  },
+  "features": {
+    "ghcr.io/devcontainers-extra/features/act:1": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers-extra/features/zsh-plugins:0": {
+      "omzPlugins": "https://github.com/zsh-users/zsh-autosuggestions",
+      "plugins": "ssh-agent npm",
+      "username": "vscode"
+    },
+    "ghcr.io/devcontainers/features/aws-cli:1": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers/features/terraform:1": {
+      "terragrunt": "latest",
+      "tflint": "latest",
+      "version": "latest"
+    },
+    "ghcr.io/stuartleeks/dev-container-features/shell-history:0": {}
+  },
+  "forwardPorts": [3000, 9000],
+  "mounts": [
+    "source=${env:HOME}${env:USERPROFILE}/.aws,target=/home/vscode/.aws,type=bind"
+  ],
+  "name": "Node.js, Mongo & PostgreSQL",
+  "postCreateCommand": "/usr/local/share/docker-init.sh",
+  "service": "app",
+  "waitFor": "postCreateCommand",
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}"
+}

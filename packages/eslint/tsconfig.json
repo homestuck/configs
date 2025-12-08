@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@homestuck/eslint-config": ["eslint.config.mjs"]
+    },
+    "tsBuildInfoFile": "node_modules/.cache/tsbuildinfo.json",
+    "types": ["node"]
+  },
+  "exclude": ["node_modules"],
+  "extends": "@homestuck/tsconfig/base.json",
+  "include": ["."]
+}

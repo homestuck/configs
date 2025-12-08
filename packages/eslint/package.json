@@ -1,0 +1,63 @@
+{
+  "name": "@homestuck/eslint-config",
+  "version": "1.0.0-alpha.1",
+  "private": false,
+  "description": "Baseline eslint configs used and maintained by Homestuck Inc., et al.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/homestuck/configs.git",
+    "directory": "packages/eslint"
+  },
+  "license": "MIT",
+  "author": "Homestuck <support@homestuck.com> (https://homestuck.com)",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./eslint.config.mjs",
+      "import": "./eslint.config.mjs",
+      "node": "./eslint.config.mjs",
+      "require": "./eslint.config.mjs",
+      "default": "./eslint.config.mjs"
+    }
+  },
+  "main": "./eslint.config.mjs",
+  "scripts": {
+    "clean": "rm -rf .turbo node_modules",
+    "format": "prettier --check . --ignore-path ../../.gitignore --ignore-path ./.prettierignore",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit"
+  },
+  "prettier": "@homestuck/prettier-config",
+  "dependencies": {
+    "@eslint/eslintrc": "catalog:eslint9",
+    "@eslint/js": "catalog:eslint9",
+    "@next/eslint-plugin-next": "catalog:next16",
+    "@typescript-eslint/eslint-plugin": "catalog:eslint9",
+    "@typescript-eslint/parser": "catalog:eslint9",
+    "eslint-config-prettier": "catalog:eslint9",
+    "eslint-import-resolver-alias": "catalog:eslint9",
+    "eslint-import-resolver-typescript": "catalog:eslint9",
+    "eslint-plugin-import": "catalog:eslint9",
+    "eslint-plugin-jsx-a11y": "catalog:eslint9",
+    "eslint-plugin-perfectionist": "catalog:eslint9",
+    "eslint-plugin-react": "catalog:eslint9",
+    "eslint-plugin-react-hooks": "catalog:eslint9",
+    "eslint-plugin-react-you-might-not-need-an-effect": "catalog:eslint9",
+    "eslint-plugin-regexp": "catalog:eslint9",
+    "eslint-plugin-simple-import-sort": "catalog:eslint9",
+    "eslint-plugin-storybook": "catalog:eslint9",
+    "eslint-plugin-turbo": "catalog:eslint9",
+    "eslint-plugin-unicorn": "catalog:eslint9",
+    "eslint-plugin-unused-imports": "catalog:eslint9",
+    "typescript-eslint": "catalog:eslint9"
+  },
+  "devDependencies": {
+    "@homestuck/prettier-config": "workspace:*",
+    "@homestuck/tsconfig": "workspace:*",
+    "@types/eslint": "catalog:eslint9",
+    "@types/node": "catalog:node24",
+    "eslint": "catalog:eslint9",
+    "globals": "catalog:",
+    "prettier": "catalog:prettier"
+  }
+}

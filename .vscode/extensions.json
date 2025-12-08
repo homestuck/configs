@@ -1,0 +1,23 @@
+{
+  "recommendations": [
+    "bradlc.vscode-tailwindcss",
+    "csstools.postcss",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "formulahendry.auto-rename-tag",
+    "ghmcadams.lintlens",
+    "github.vscode-github-actions",
+    "github.vscode-pull-request-github",
+    "meganrogge.template-string-converter",
+    "mikestead.dotenv",
+    "ms-vsliveshare.vsliveshare",
+    "naumovs.color-highlight",
+    "pflannery.vscode-versionlens",
+    "streetsidesoftware.code-spell-checker",
+    "wix.vscode-import-cost",
+    "unifiedjs.vscode-mdx",
+    "DavidAnson.vscode-markdownlint",
+    "Orta.vscode-jest",
+    "YoavBls.pretty-ts-errors"
+  ]
+}
