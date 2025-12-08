@@ -36,10 +36,6 @@ jobs:
         working-directory: packages/prettier
         run: pnpm publish --access public --no-git-checks
         if: ${{ steps.release.outputs['packages/prettier--release_created'] }}
-      # - name: 'Publish Storybook Config'
-      #   working-directory: packages/storybook
-      #   run: pnpm publish --access public --no-git-checks
-      #   if: ${{ steps.release.outputs['packages/storybook--release_created'] }}
       - name: 'Publish Typescript Config'
         working-directory: packages/tsconfig
         run: pnpm publish --access public --no-git-checks
