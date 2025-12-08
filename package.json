@@ -33,6 +33,7 @@
     "@parcel/packager-ts": "catalog:",
     "@parcel/transformer-typescript-types": "catalog:",
     "depcheck": "catalog:",
+    "eslint": "catalog:eslint9",
     "glob": "catalog:",
     "husky": "catalog:",
     "lint-staged": "catalog:",
