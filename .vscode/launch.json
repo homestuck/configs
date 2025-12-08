@@ -1,0 +1,63 @@
+{
+  "configurations": [
+    {
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}/",
+      "name": "Web",
+      "request": "launch",
+      "runtimeArgs": ["dev", "--filter", "web"],
+      "runtimeExecutable": "pnpm",
+      "skipFiles": ["<node_internals>/**"],
+      "type": "node"
+    },
+    {
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}/",
+      "name": "Payload",
+      "request": "launch",
+      "runtimeArgs": ["dev", "--filter", "payload"],
+      "runtimeExecutable": "pnpm",
+      "skipFiles": ["<node_internals>/**"],
+      "type": "node"
+    },
+    {
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}/",
+      "name": "Medusa",
+      "request": "launch",
+      "runtimeArgs": ["dev", "--filter", "medusa"],
+      "runtimeExecutable": "pnpm",
+      "skipFiles": ["<node_internals>/**"],
+      "type": "node"
+    },
+    {
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}/",
+      "name": "Docs",
+      "request": "launch",
+      "runtimeArgs": ["storybook", "--filter", "docs"],
+      "runtimeExecutable": "pnpm",
+      "skipFiles": ["<node_internals>/**"],
+      "type": "node"
+    },
+    {
+      "args": [
+        "--runInBand",
+        "--watchAll=false",
+        "--testNamePattern",
+        "${jest.testNamePattern}",
+        "--runTestsByPath",
+        "${jest.testFile}"
+      ],
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}/apps/medusa",
+      "internalConsoleOptions": "neverOpen",
+      "name": "vscode-jest-tests.v2.medusa",
+      "program": "${workspaceFolder}/apps/medusa/node_modules/.bin/jest",
+      "request": "launch",
+      "runtimeExecutable": "sh",
+      "type": "node"
+    }
+  ],
+  "version": "0.2.0"
+}

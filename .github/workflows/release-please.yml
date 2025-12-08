@@ -1,0 +1,46 @@
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows: [CI]
+    types: [completed]
+    branches: [main]
+name: release-please
+permissions:
+  contents: write
+  pull-requests: write
+jobs:
+  release-please:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: googleapis/release-please-action@v4
+        id: release
+        with:
+          token: ${{ secrets.GH_REPO_WRITE_TOKEN }}
+          config-file: release-please-config.json
+          manifest-file: .release-please-manifest.json
+      - uses: actions/checkout@v4
+        # these if statements ensure that a publication only occurs when
+        # a new release is created:
+        if: ${{ steps.release.outputs.releases_created == 'true' }}
+      - name: Setup
+        uses: ./tooling/github/setup
+        if: ${{ steps.release.outputs.releases_created == 'true' }}
+      - name: Set npm access token
+        run: pnpm set "//registry.npmjs.org/:_authToken=${{secrets.NPMJS_ACCESS_TOKEN}}"
+        if: ${{ steps.release.outputs.releases_created == 'true' }}
+      - name: 'Publish Eslint Config'
+        working-directory: packages/eslint
+        run: pnpm publish --access public --no-git-checks
+        if: ${{ steps.release.outputs['packages/eslint--release_created'] }}
+      - name: 'Publish Prettier Config'
+        working-directory: packages/prettier
+        run: pnpm publish --access public --no-git-checks
+        if: ${{ steps.release.outputs['packages/prettier--release_created'] }}
+      # - name: 'Publish Storybook Config'
+      #   working-directory: packages/storybook
+      #   run: pnpm publish --access public --no-git-checks
+      #   if: ${{ steps.release.outputs['packages/storybook--release_created'] }}
+      - name: 'Publish Typescript Config'
+        working-directory: packages/tsconfig
+        run: pnpm publish --access public --no-git-checks
+        if: ${{ steps.release.outputs['packages/tsconfig--release_created'] }}

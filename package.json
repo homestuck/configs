@@ -1,0 +1,50 @@
+{
+  "name": "@homestuck/configs",
+  "private": true,
+  "description": "Monorepo of shared tooling configurations maintained by Homestuck Inc., et al.",
+  "type": "module",
+  "scripts": {
+    "build": "turbo build",
+    "clean": "git clean -xdf node_modules",
+    "clean:workspaces": "turbo clean",
+    "dev": "turbo dev",
+    "doover": "turbo clean && rm -rf **/node_modules && pnpm i",
+    "format": "turbo format --continue -- --cache --cache-location node_modules/.cache/.prettiercache",
+    "format:fix": "turbo format --continue -- --write --cache --cache-location node_modules/.cache/.prettiercache",
+    "preinstall": "npx only-allow pnpm",
+    "lint": "turbo lint --continue -- --cache --cache-location node_modules/.cache/.eslintcache",
+    "lint:fix": "turbo lint --continue -- --fix --cache --cache-location node_modules/.cache/.eslintcache",
+    "lint:force": "turbo lint --continue --force -- --cache --cache-location node_modules/.cache/.eslintcache",
+    "lint:force:fix": "turbo lint --continue --force -- --fix --cache --cache-location node_modules/.cache/.eslintcache",
+    "lint:ws": "pnpm dlx sherif@latest",
+    "packages:check": "npm-check-updates",
+    "packages:sync": "syncpack",
+    "packages:update": "npm-check-updates -u && pnpm i",
+    "prepare": "husky",
+    "typecheck": "turbo typecheck --continue"
+  },
+  "prettier": "@homestuck/prettier-config",
+  "devDependencies": {
+    "@commitlint/cli": "catalog:",
+    "@commitlint/config-conventional": "catalog:",
+    "@homestuck/eslint-config": "workspace:*",
+    "@homestuck/prettier-config": "workspace:*",
+    "@homestuck/tsconfig": "workspace:*",
+    "@parcel/packager-ts": "catalog:",
+    "@parcel/transformer-typescript-types": "catalog:",
+    "depcheck": "catalog:",
+    "eslint": "catalog:eslint9",
+    "glob": "catalog:",
+    "husky": "catalog:",
+    "lint-staged": "catalog:",
+    "npm-check-updates": "catalog:",
+    "prettier": "catalog:prettier",
+    "syncpack": "catalog:",
+    "turbo": "catalog:",
+    "typescript": "catalog:"
+  },
+  "packageManager": "pnpm@10.25.0+sha512.5e82639027af37cf832061bcc6d639c219634488e0f2baebe785028a793de7b525ffcd3f7ff574f5e9860654e098fe852ba8ac5dd5cefe1767d23a020a92f501",
+  "engines": {
+    "node": ">=24.10.x"
+  }
+}
