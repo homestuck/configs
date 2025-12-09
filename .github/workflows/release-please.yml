@@ -26,7 +26,7 @@ jobs:
         uses: ./tooling/github/setup
         if: ${{ steps.release.outputs.releases_created == 'true' }}
       - name: Set npm access token
-        run: pnpm set "//registry.npmjs.org/:_authToken=${{secrets.NPMJS_ACCESS_TOKEN}}"
+        run: pnpm set "//registry.npmjs.org/:_authToken=${{secrets.NPMJS_HOMESTUCK_ACCESS_TOKEN}}"
         if: ${{ steps.release.outputs.releases_created == 'true' }}
       - name: 'Publish Eslint Config'
         working-directory: packages/eslint
