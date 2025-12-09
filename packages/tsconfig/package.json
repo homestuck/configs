@@ -1,6 +1,6 @@
 {
   "name": "@homestuck/tsconfig",
-  "version": "1.0.0-alpha.3",
+  "version": "1.0.0",
   "private": false,
   "description": "Baseline TypeScript configs used and maintained by Homestuck Inc., et al.",
   "repository": {
