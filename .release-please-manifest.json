@@ -1,6 +1,6 @@
 {
   "packages/configs": "1.0.0-alpha.2",
-  "packages/eslint": "1.0.0-alpha.2",
-  "packages/prettier": "1.0.0-alpha.2",
-  "packages/tsconfig": "1.0.0-alpha.2"
+  "packages/eslint": "1.0.0-alpha.3",
+  "packages/prettier": "1.0.0-alpha.3",
+  "packages/tsconfig": "1.0.0-alpha.3"
 }
