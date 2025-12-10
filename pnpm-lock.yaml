@@ -34,8 +34,8 @@ catalogs:
       specifier: 16.2.7
       version: 16.2.7
     npm-check-updates:
-      specifier: 19.1.2
-      version: 19.1.2
+      specifier: 19.2.0
+      version: 19.2.0
     syncpack:
       specifier: 13.0.4
       version: 13.0.4
@@ -107,8 +107,8 @@ catalogs:
       specifier: 12.1.1
       version: 12.1.1
     eslint-plugin-storybook:
-      specifier: 10.1.4
-      version: 10.1.4
+      specifier: 10.1.6
+      version: 10.1.6
     eslint-plugin-turbo:
       specifier: 2.6.3
       version: 2.6.3
@@ -123,12 +123,12 @@ catalogs:
       version: 8.49.0
   next16:
     '@next/eslint-plugin-next':
-      specifier: 16.0.7
-      version: 16.0.7
+      specifier: 16.0.8
+      version: 16.0.8
   node24:
     '@types/node':
-      specifier: 24.10.1
-      version: 24.10.1
+      specifier: 24.10.3
+      version: 24.10.3
   prettier:
     '@ianvs/prettier-plugin-sort-imports':
       specifier: 4.7.0
@@ -155,7 +155,7 @@ importers:
     devDependencies:
       '@commitlint/cli':
         specifier: 'catalog:'
-        version: 20.2.0(@types/node@24.10.1)(typescript@5.9.3)
+        version: 20.2.0(@types/node@24.10.3)(typescript@5.9.3)
       '@commitlint/config-conventional':
         specifier: 'catalog:'
         version: 20.2.0
@@ -191,7 +191,7 @@ importers:
         version: 16.2.7
       npm-check-updates:
         specifier: 'catalog:'
-        version: 19.1.2
+        version: 19.2.0
       prettier:
         specifier: catalog:prettier
         version: 3.7.4
@@ -215,7 +215,7 @@ importers:
         version: 9.39.1
       '@next/eslint-plugin-next':
         specifier: catalog:next16
-        version: 16.0.7
+        version: 16.0.8
       '@typescript-eslint/eslint-plugin':
         specifier: catalog:eslint9
         version: 8.49.0(@typescript-eslint/parser@8.49.0(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3)
@@ -263,7 +263,7 @@ importers:
         version: 12.1.1(eslint@9.39.1(jiti@2.6.1))
       eslint-plugin-storybook:
         specifier: catalog:eslint9
-        version: 10.1.4(eslint@9.39.1(jiti@2.6.1))(storybook@10.1.4(@testing-library/dom@10.4.1)(prettier@3.7.4)(react-dom@19.2.1(react@19.2.1))(react@19.2.1))(typescript@5.9.3)
+        version: 10.1.6(eslint@9.39.1(jiti@2.6.1))(storybook@10.1.4(@testing-library/dom@10.4.1)(prettier@3.7.4)(react-dom@19.2.1(react@19.2.1))(react@19.2.1))(typescript@5.9.3)
       eslint-plugin-turbo:
         specifier: catalog:eslint9
         version: 2.6.3(eslint@9.39.1(jiti@2.6.1))(turbo@2.6.3)
@@ -291,7 +291,7 @@ importers:
         version: 9.14.0
       '@types/node':
         specifier: catalog:node24
-        version: 24.10.1
+        version: 24.10.3
       eslint:
         specifier: catalog:eslint9
         version: 9.39.1(jiti@2.6.1)
@@ -328,7 +328,7 @@ importers:
         version: link:../tsconfig
       '@types/node':
         specifier: catalog:node24
-        version: 24.10.1
+        version: 24.10.3
       typescript:
         specifier: 'catalog:'
         version: 5.9.3
@@ -855,8 +855,8 @@ packages:
   '@napi-rs/wasm-runtime@0.2.12':
     resolution: {integrity: sha512-ZVWUcfwY4E/yPitQJl481FjFo3K22D6qF0DuFH6Y/nbnE11GY5uguDxZMGXPQ8WQ0128MXQD7TnfHyK4oWoIJQ==}
 
-  '@next/eslint-plugin-next@16.0.7':
-    resolution: {integrity: sha512-hFrTNZcMEG+k7qxVxZJq3F32Kms130FAhG8lvw2zkKBgAcNOJIxlljNiCjGygvBshvaGBdf88q2CqWtnqezDHA==}
+  '@next/eslint-plugin-next@16.0.8':
+    resolution: {integrity: sha512-1miV0qXDcLUaOdHridVPCh4i39ElRIAraseVIbb3BEqyZ5ol9sPyjTP/GNTPV5rBxqxjF6/vv5zQTVbhiNaLqA==}
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -1260,6 +1260,9 @@ packages:
 
   '@types/node@24.10.1':
     resolution: {integrity: sha512-GNWcUTRBgIRJD5zj+Tq0fKOJ5XZajIiBroOF0yvj2bSU1WvNdYS/dn9UxwsujGW4JX06dnHyjV2y9rRaybH0iQ==}
+
+  '@types/node@24.10.3':
+    resolution: {integrity: sha512-gqkrWUsS8hcm0r44yn7/xZeV1ERva/nLgrLxFRUGb7aoNMIJfZJ3AC261zDQuOAKC7MiXai1WCpYc48jAHoShQ==}
 
   '@types/parse-json@4.0.2':
     resolution: {integrity: sha512-dISoDXWWQwUquiKsyZ4Ng+HX2KsPL7LyHKHQwgGFEA3IaKac4Obd+h2a/a6waisAoepJlBcx9paWqjA8/HVjCw==}
@@ -2100,11 +2103,11 @@ packages:
     peerDependencies:
       eslint: '>=5.0.0'
 
-  eslint-plugin-storybook@10.1.4:
-    resolution: {integrity: sha512-itG2eLrWyuP5RGIL3TMGA5KSGoBOX3aTnQd43qLJu36ZMzd9H4RHN1I8WTVvyiaInppYJMGB4nnXzSdNXUUeTQ==}
+  eslint-plugin-storybook@10.1.6:
+    resolution: {integrity: sha512-EHMJ2cWmww3cOhB0bNonbqsm1MG7163em+uJEfuAvgBftsCaul7dGGq8izTKxurF/nospYUTYEB3bIJRStP0BQ==}
     peerDependencies:
       eslint: '>=8'
-      storybook: ^10.1.4
+      storybook: ^10.1.6
 
   eslint-plugin-turbo@2.6.3:
     resolution: {integrity: sha512-91WZ+suhT/pk+qNS0/rqT43xLUlUblsa3a8jKmAStGhkJCmR2uX0oWo/e0Edb+It8MdnteXuYpCkvsK4Vw8FtA==}
@@ -2862,8 +2865,8 @@ packages:
   node-releases@2.0.27:
     resolution: {integrity: sha512-nmh3lCkYZ3grZvqcCH+fjmQ7X+H0OeZgP40OierEaAptX4XofMh5kwNbWh7lBduUzCcV/8kZ+NDLCwm2iorIlA==}
 
-  npm-check-updates@19.1.2:
-    resolution: {integrity: sha512-FNeFCVgPOj0fz89hOpGtxP2rnnRHR7hD2E8qNU8SMWfkyDZXA/xpgjsL3UMLSo3F/K13QvJDnbxPngulNDDo/g==}
+  npm-check-updates@19.2.0:
+    resolution: {integrity: sha512-XSIuL0FNgzXPDZa4lje7+OwHjiyEt84qQm6QMsQRbixNY5EHEM9nhgOjxjlK9jIbN+ysvSqOV8DKNS0zydwbdg==}
     engines: {node: '>=20.0.0', npm: '>=8.12.1'}
     hasBin: true
 
@@ -3867,11 +3870,11 @@ snapshots:
       '@babel/helper-string-parser': 7.27.1
       '@babel/helper-validator-identifier': 7.28.5
 
-  '@commitlint/cli@20.2.0(@types/node@24.10.1)(typescript@5.9.3)':
+  '@commitlint/cli@20.2.0(@types/node@24.10.3)(typescript@5.9.3)':
     dependencies:
       '@commitlint/format': 20.2.0
       '@commitlint/lint': 20.2.0
-      '@commitlint/load': 20.2.0(@types/node@24.10.1)(typescript@5.9.3)
+      '@commitlint/load': 20.2.0(@types/node@24.10.3)(typescript@5.9.3)
       '@commitlint/read': 20.2.0
       '@commitlint/types': 20.2.0
       tinyexec: 1.0.2
@@ -3918,7 +3921,7 @@ snapshots:
       '@commitlint/rules': 20.2.0
       '@commitlint/types': 20.2.0
 
-  '@commitlint/load@20.2.0(@types/node@24.10.1)(typescript@5.9.3)':
+  '@commitlint/load@20.2.0(@types/node@24.10.3)(typescript@5.9.3)':
     dependencies:
       '@commitlint/config-validator': 20.2.0
       '@commitlint/execute-rule': 20.0.0
@@ -3926,7 +3929,7 @@ snapshots:
       '@commitlint/types': 20.2.0
       chalk: 5.6.2
       cosmiconfig: 9.0.0(typescript@5.9.3)
-      cosmiconfig-typescript-loader: 6.2.0(@types/node@24.10.1)(cosmiconfig@9.0.0(typescript@5.9.3))(typescript@5.9.3)
+      cosmiconfig-typescript-loader: 6.2.0(@types/node@24.10.3)(cosmiconfig@9.0.0(typescript@5.9.3))(typescript@5.9.3)
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       lodash.uniq: 4.5.0
@@ -4221,7 +4224,7 @@ snapshots:
       '@tybys/wasm-util': 0.10.1
     optional: true
 
-  '@next/eslint-plugin-next@16.0.7':
+  '@next/eslint-plugin-next@16.0.8':
     dependencies:
       fast-glob: 3.3.1
 
@@ -4656,6 +4659,10 @@ snapshots:
   '@types/minimatch@3.0.5': {}
 
   '@types/node@24.10.1':
+    dependencies:
+      undici-types: 7.16.0
+
+  '@types/node@24.10.3':
     dependencies:
       undici-types: 7.16.0
 
@@ -5175,9 +5182,9 @@ snapshots:
     dependencies:
       browserslist: 4.28.1
 
-  cosmiconfig-typescript-loader@6.2.0(@types/node@24.10.1)(cosmiconfig@9.0.0(typescript@5.9.3))(typescript@5.9.3):
+  cosmiconfig-typescript-loader@6.2.0(@types/node@24.10.3)(cosmiconfig@9.0.0(typescript@5.9.3))(typescript@5.9.3):
     dependencies:
-      '@types/node': 24.10.1
+      '@types/node': 24.10.3
       cosmiconfig: 9.0.0(typescript@5.9.3)
       jiti: 2.6.1
       typescript: 5.9.3
@@ -5668,7 +5675,7 @@ snapshots:
     dependencies:
       eslint: 9.39.1(jiti@2.6.1)
 
-  eslint-plugin-storybook@10.1.4(eslint@9.39.1(jiti@2.6.1))(storybook@10.1.4(@testing-library/dom@10.4.1)(prettier@3.7.4)(react-dom@19.2.1(react@19.2.1))(react@19.2.1))(typescript@5.9.3):
+  eslint-plugin-storybook@10.1.6(eslint@9.39.1(jiti@2.6.1))(storybook@10.1.4(@testing-library/dom@10.4.1)(prettier@3.7.4)(react-dom@19.2.1(react@19.2.1))(react@19.2.1))(typescript@5.9.3):
     dependencies:
       '@typescript-eslint/utils': 8.49.0(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3)
       eslint: 9.39.1(jiti@2.6.1)
@@ -6444,7 +6451,7 @@ snapshots:
 
   node-releases@2.0.27: {}
 
-  npm-check-updates@19.1.2: {}
+  npm-check-updates@19.2.0: {}
 
   npm-package-arg@12.0.2:
     dependencies:

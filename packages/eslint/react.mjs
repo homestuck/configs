@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/no-unsafe-member-access */
+/* eslint-disable @typescript-eslint/no-unsafe-member-access, @typescript-eslint/no-unsafe-argument */
 
 // @ts-expect-error - no types
 import pluginJSXA11y from 'eslint-plugin-jsx-a11y'
@@ -15,9 +15,7 @@ const $config = defineConfig(
   { ...pluginReact.configs.flat.recommended },
   pluginReactHooks.configs.flat.recommended,
   pluginReactYouMightNotNeedAnEffect.configs.recommended,
-
   pluginReactCompiler.configs.recommended,
-  // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
   pluginJSXA11y.flatConfigs.recommended,
   {
     languageOptions: {
