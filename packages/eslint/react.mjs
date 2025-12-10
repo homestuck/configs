@@ -12,7 +12,9 @@ export const reactEslintConfig = defineConfig(
   { ...pluginReact.configs.flat.recommended },
   pluginReactHooks.configs.flat.recommended,
   pluginReactYouMightNotNeedAnEffect.configs.recommended,
+
   pluginReactCompiler.configs.recommended,
+
   pluginJSXA11y.flatConfigs.recommended,
   {
     languageOptions: {
