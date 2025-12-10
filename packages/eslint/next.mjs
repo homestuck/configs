@@ -7,11 +7,11 @@ const compat = new FlatCompat({
   baseDirectory: import.meta.dirname,
 })
 
-const nextEslintConfig = defineConfig(
+const $config = defineConfig(
   reactEslintConfig,
   ...compat.config({
     extends: ['plugin:@next/next/recommended'],
   }),
 )
 
-export default nextEslintConfig
+export default $config

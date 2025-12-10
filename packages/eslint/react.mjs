@@ -1,3 +1,6 @@
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
+
+// @ts-expect-error - no types
 import pluginJSXA11y from 'eslint-plugin-jsx-a11y'
 import pluginReact from 'eslint-plugin-react'
 import pluginReactCompiler from 'eslint-plugin-react-compiler'
@@ -7,12 +10,14 @@ import { defineConfig } from 'eslint/config'
 
 import { rootEslintConfig } from '@homestuck/eslint-config'
 
-const reactEslintConfig = defineConfig(
+const $config = defineConfig(
   ...rootEslintConfig,
   { ...pluginReact.configs.flat.recommended },
   pluginReactHooks.configs.flat.recommended,
   pluginReactYouMightNotNeedAnEffect.configs.recommended,
+
   pluginReactCompiler.configs.recommended,
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
   pluginJSXA11y.flatConfigs.recommended,
   {
     languageOptions: {
@@ -48,4 +53,4 @@ const reactEslintConfig = defineConfig(
   },
 )
 
-export default reactEslintConfig
+export default $config
