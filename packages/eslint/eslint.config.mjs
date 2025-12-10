@@ -1,51 +1,46 @@
 /* eslint-disable import/no-named-as-default-member */
-import path from 'node:path'
-import { fileURLToPath } from 'node:url'
-import ESLint from '@eslint/js'
-import TSESLintParser from '@typescript-eslint/parser'
-import ESLintConfigPrettier from 'eslint-config-prettier'
-import ESLintPluginImport from 'eslint-plugin-import'
-import ESLintPluginPerfectionist from 'eslint-plugin-perfectionist'
-import { configs as ESLintPluginRegexpConfigs } from 'eslint-plugin-regexp'
-import ESLintPluginStorybook from 'eslint-plugin-storybook'
-import ESLintPluginTurbo from 'eslint-plugin-turbo'
-import ESLintPluginUnicorn from 'eslint-plugin-unicorn'
-import ESLintPluginUnusedImports from 'eslint-plugin-unused-imports'
+import eslint from '@eslint/js'
+import tseslintParser from '@typescript-eslint/parser'
+import eslintConfigPrettier from 'eslint-config-prettier'
+import pluginImport from 'eslint-plugin-import'
+import pluginPerfectionist from 'eslint-plugin-perfectionist'
+import pluginRegexp from 'eslint-plugin-regexp'
+import pluginStorybook from 'eslint-plugin-storybook'
+import pluginTurbo from 'eslint-plugin-turbo'
+import pluginUnicorn from 'eslint-plugin-unicorn'
+import pluginUnusedImports from 'eslint-plugin-unused-imports'
 import { defineConfig } from 'eslint/config'
 import globals from 'globals'
-import TSESLint from 'typescript-eslint'
-
-const __filename = fileURLToPath(import.meta.url)
-const __dirname = path.dirname(__filename)
+import tseslint from 'typescript-eslint'
 
 export const rootEslintConfig = defineConfig(
   {
     ignores: ['**/.next', '**/dist', '**/pnpm-lock.yaml', '**/next-env.d.ts'],
   },
-  ESLintPluginTurbo.configs['flat/recommended'],
-  ESLint.configs.recommended,
-  TSESLint.configs.recommendedTypeChecked,
-  TSESLint.configs.strictTypeChecked,
-  TSESLint.configs.stylisticTypeChecked,
-  ESLintPluginPerfectionist.configs['recommended-natural'],
-  ESLintPluginRegexpConfigs['flat/recommended'],
-  ESLintPluginUnicorn.configs.recommended,
-  ESLintPluginImport.flatConfigs.recommended,
+  pluginTurbo.configs['flat/recommended'],
+  eslint.configs.recommended,
+  tseslint.configs.recommendedTypeChecked,
+  tseslint.configs.strictTypeChecked,
+  tseslint.configs.stylisticTypeChecked,
+  pluginPerfectionist.configs['recommended-natural'],
+  pluginRegexp.configs['flat/recommended'],
+  pluginUnicorn.configs.recommended,
+  pluginImport.flatConfigs.recommended,
   // @ts-expect-error --- false positive
-  ESLintPluginStorybook.configs['flat/recommended'],
+  pluginStorybook.configs['flat/recommended'],
   {
     languageOptions: {
       ecmaVersion: 'latest',
       globals: {
         ...globals.node,
       },
-      parser: TSESLintParser,
+      parser: tseslintParser,
       parserOptions: {
         ecmaFeatures: {
           jsx: true,
         },
         projectService: true,
-        tsconfigRootDir: __dirname,
+        tsconfigRootDir: import.meta.dirname,
       },
       sourceType: 'module',
     },
@@ -54,7 +49,7 @@ export const rootEslintConfig = defineConfig(
     },
     name: 'Settings',
     plugins: {
-      'unused-imports': ESLintPluginUnusedImports,
+      'unused-imports': pluginUnusedImports,
     },
     rules: {
       'import/consistent-type-specifier-style': ['error', 'prefer-top-level'],
@@ -164,7 +159,7 @@ export const rootEslintConfig = defineConfig(
       ],
     },
   },
-  ESLintConfigPrettier,
+  eslintConfigPrettier,
 )
 
 export default rootEslintConfig

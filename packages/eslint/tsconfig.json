@@ -2,7 +2,9 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@homestuck/eslint-config": ["eslint.config.mjs"]
+      "@homestuck/eslint-config": ["eslint.config.mjs"],
+      "@homestuck/eslint-config/next": ["next.mjs"],
+      "@homestuck/eslint-config/react": ["react.mjs"]
     },
     "tsBuildInfoFile": "node_modules/.cache/tsbuildinfo.json",
     "types": ["node"]
