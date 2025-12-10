@@ -7,7 +7,7 @@ import { defineConfig } from 'eslint/config'
 
 import { rootEslintConfig } from '@homestuck/eslint-config'
 
-export const reactEslintConfig = defineConfig(
+const reactEslintConfig = defineConfig(
   ...rootEslintConfig,
   { ...pluginReact.configs.flat.recommended },
   pluginReactHooks.configs.flat.recommended,
