@@ -19,13 +19,6 @@
       "require": "./eslint.config.mjs",
       "default": "./eslint.config.mjs"
     },
-    "./next": {
-      "types": "./next.mjs",
-      "import": "./next.mjs",
-      "node": "./next.mjs",
-      "require": "./next.mjs",
-      "default": "./next.mjs"
-    },
     "./react": {
       "types": "./react.mjs",
       "import": "./react.mjs",
