@@ -55,3 +55,6 @@ catalogs:
     'prettier-plugin-packagejson': 2.5.20
     'prettier-plugin-sort-json': 4.1.1
     'prettier-plugin-tailwindcss': 0.7.2
+
+publicHoistPattern:
+  - '*prettier*'

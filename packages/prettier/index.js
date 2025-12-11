@@ -3,7 +3,7 @@
 /** @typedef {import("@prettier/plugin-xml")} XMLConfig */
 
 /** @type { PrettierConfig | SortImportsConfig | XMLConfig } */
-module.exports = {
+const config = {
   arrowParens: 'always',
   bracketSameLine: true,
   bracketSpacing: true,
@@ -18,7 +18,7 @@ module.exports = {
     '^@homestuck/(.*)$',
     '',
     '<TYPES>^#',
-    '^#/(.*)$',
+    '^(#/(.*)$)|^(#(.*)$)',
     '',
     '<TYPES>^[.|..|~]',
     '^~/',
@@ -30,11 +30,11 @@ module.exports = {
   importOrderTypeScriptVersion: '5.9.3',
   jsonRecursiveSort: true,
   plugins: [
-    require.resolve('@ianvs/prettier-plugin-sort-imports'),
-    require.resolve('@prettier/plugin-xml'),
-    require.resolve('prettier-plugin-packagejson'),
-    require.resolve('prettier-plugin-sort-json'),
-    require.resolve('prettier-plugin-tailwindcss'),
+    '@ianvs/prettier-plugin-sort-imports',
+    '@prettier/plugin-xml',
+    'prettier-plugin-packagejson',
+    'prettier-plugin-sort-json',
+    'prettier-plugin-tailwindcss',
   ],
   printWidth: 80,
   proseWrap: 'preserve',
@@ -43,9 +43,10 @@ module.exports = {
   tabWidth: 2,
   trailingComma: 'all',
   useTabs: false,
-  tailwindFunctions: ['classNames', 'clsx', 'cn', 'cva', 'tv', 'tw', 'twMerge'],
+  xmlQuoteAttributes: 'double',
   xmlSelfClosingSpace: true,
   xmlSortAttributesByKey: true,
-  xmlQuoteAttributes: 'double',
   xmlWhitespaceSensitivity: 'preserve',
 }
+
+export default config
