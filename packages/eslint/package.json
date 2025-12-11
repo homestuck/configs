@@ -18,6 +18,13 @@
       "node": "./eslint.config.mjs",
       "require": "./eslint.config.mjs",
       "default": "./eslint.config.mjs"
+    },
+    "./react": {
+      "types": "./react.mjs",
+      "import": "./react.mjs",
+      "node": "./react.mjs",
+      "require": "./react.mjs",
+      "default": "./react.mjs"
     }
   },
   "main": "./eslint.config.mjs",
@@ -40,7 +47,9 @@
     "eslint-plugin-import": "catalog:eslint9",
     "eslint-plugin-jsx-a11y": "catalog:eslint9",
     "eslint-plugin-perfectionist": "catalog:eslint9",
+    "eslint-plugin-prettier": "catalog:eslint9",
     "eslint-plugin-react": "catalog:eslint9",
+    "eslint-plugin-react-compiler": "catalog:eslint9",
     "eslint-plugin-react-hooks": "catalog:eslint9",
     "eslint-plugin-react-you-might-not-need-an-effect": "catalog:eslint9",
     "eslint-plugin-regexp": "catalog:eslint9",
@@ -55,6 +64,7 @@
     "@homestuck/prettier-config": "workspace:*",
     "@homestuck/tsconfig": "workspace:*",
     "@types/eslint": "catalog:eslint9",
+    "@types/eslint__js": "catalog:eslint9",
     "@types/node": "catalog:node24",
     "eslint": "catalog:eslint9",
     "globals": "catalog:",
