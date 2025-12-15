@@ -41,7 +41,6 @@
     "@next/eslint-plugin-next": "catalog:next16",
     "@typescript-eslint/eslint-plugin": "catalog:eslint9",
     "@typescript-eslint/parser": "catalog:eslint9",
-    "eslint": "catalog:eslint9",
     "eslint-config-prettier": "catalog:eslint9",
     "eslint-import-resolver-alias": "catalog:eslint9",
     "eslint-import-resolver-typescript": "catalog:eslint9",
@@ -59,7 +58,6 @@
     "eslint-plugin-turbo": "catalog:eslint9",
     "eslint-plugin-unicorn": "catalog:eslint9",
     "eslint-plugin-unused-imports": "catalog:eslint9",
-    "globals": "catalog:",
     "typescript-eslint": "catalog:eslint9"
   },
   "devDependencies": {
@@ -68,6 +66,8 @@
     "@types/eslint": "catalog:eslint9",
     "@types/eslint__js": "catalog:eslint9",
     "@types/node": "catalog:node24",
+    "eslint": "catalog:eslint9",
+    "globals": "catalog:",
     "prettier": "catalog:prettier"
   }
 }
