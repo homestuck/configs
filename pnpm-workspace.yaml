@@ -19,13 +19,13 @@ catalog:
 catalogs:
   eslint9:
     '@eslint/eslintrc': '3.3.3'
-    '@eslint/js': '9.39.1'
+    '@eslint/js': '9.39.2'
     '@types/eslint': '9.6.1'
     '@types/eslint__js': 9.14.0
     '@types/eslint-plugin-jsx-a11y': 6.10.1
     '@typescript-eslint/eslint-plugin': '8.49.0'
     '@typescript-eslint/parser': '8.49.0'
-    'eslint': '9.39.1'
+    'eslint': '9.39.2'
     'eslint-config-prettier': '10.1.8'
     'eslint-import-resolver-alias': '1.1.2'
     'eslint-import-resolver-typescript': '4.4.4'
@@ -39,15 +39,15 @@ catalogs:
     'eslint-plugin-react-you-might-not-need-an-effect': '0.7.0'
     'eslint-plugin-regexp': '2.10.0'
     'eslint-plugin-simple-import-sort': '12.1.1'
-    'eslint-plugin-storybook': '10.1.6'
+    'eslint-plugin-storybook': '10.1.9'
     'eslint-plugin-turbo': '2.6.3'
     'eslint-plugin-unicorn': '62.0.0'
     'eslint-plugin-unused-imports': '4.3.0'
     'typescript-eslint': '8.49.0'
   next16:
-    '@next/eslint-plugin-next': '16.0.8'
+    '@next/eslint-plugin-next': '16.0.10'
   node24:
-    '@types/node': 24.10.3
+    '@types/node': 24.10.4
   prettier:
     '@ianvs/prettier-plugin-sort-imports': '4.7.0'
     '@prettier/plugin-xml': 3.4.2
@@ -55,3 +55,6 @@ catalogs:
     'prettier-plugin-packagejson': 2.5.20
     'prettier-plugin-sort-json': 4.1.1
     'prettier-plugin-tailwindcss': 0.7.2
+
+publicHoistPattern:
+  - '*prettier*'

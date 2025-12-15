@@ -2,7 +2,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@homestuck/prettier-config": ["index.js"]
+      "@homestuck/prettier-config": ["index.mjs"]
     },
     "tsBuildInfoFile": "node_modules/.cache/tsbuildinfo.json"
   },
