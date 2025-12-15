@@ -222,6 +222,9 @@ importers:
       '@typescript-eslint/parser':
         specifier: catalog:eslint9
         version: 8.49.0(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3)
+      eslint:
+        specifier: catalog:eslint9
+        version: 9.39.2(jiti@2.6.1)
       eslint-config-prettier:
         specifier: catalog:eslint9
         version: 10.1.8(eslint@9.39.2(jiti@2.6.1))
@@ -273,6 +276,9 @@ importers:
       eslint-plugin-unused-imports:
         specifier: catalog:eslint9
         version: 4.3.0(@typescript-eslint/eslint-plugin@8.49.0(@typescript-eslint/parser@8.49.0(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.2(jiti@2.6.1))
+      globals:
+        specifier: 'catalog:'
+        version: 16.5.0
       typescript-eslint:
         specifier: catalog:eslint9
         version: 8.49.0(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3)
@@ -292,12 +298,6 @@ importers:
       '@types/node':
         specifier: catalog:node24
         version: 24.10.4
-      eslint:
-        specifier: catalog:eslint9
-        version: 9.39.2(jiti@2.6.1)
-      globals:
-        specifier: 'catalog:'
-        version: 16.5.0
       prettier:
         specifier: catalog:prettier
         version: 3.7.4
