@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/homestuck/configs/compare/eslint-config@v1.1.1...eslint-config@v1.2.0) (2025-12-15)
+
+
+### Features
+
+* **eslint:** Add NextJS config to Eslint exports ([#18](https://github.com/homestuck/configs/issues/18)) ([54c5dc9](https://github.com/homestuck/configs/commit/54c5dc9625646c09e3ab7ebe917af43fb1ca871c))
+
 ## [1.1.1](https://github.com/homestuck/configs/compare/eslint-config@v1.1.0...eslint-config@v1.1.1) (2025-12-15)
 
 
