@@ -13,7 +13,7 @@ import { defineConfig } from 'eslint/config'
 import globals from 'globals'
 import tseslint from 'typescript-eslint'
 
-export const rootEslintConfig = defineConfig(
+const rootEslintConfig = defineConfig(
   {
     ignores: ['**/.next', '**/dist', '**/pnpm-lock.yaml', '**/next-env.d.ts'],
   },

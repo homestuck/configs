@@ -8,7 +8,7 @@ import pluginReactHooks from 'eslint-plugin-react-hooks'
 import pluginReactYouMightNotNeedAnEffect from 'eslint-plugin-react-you-might-not-need-an-effect'
 import { defineConfig } from 'eslint/config'
 
-import { rootEslintConfig } from '@homestuck/eslint-config'
+import rootEslintConfig from '@homestuck/eslint-config'
 
 const $config = defineConfig(
   ...rootEslintConfig,
