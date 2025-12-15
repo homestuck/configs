@@ -18,7 +18,7 @@ jobs:
           token: ${{ secrets.GH_REPO_WRITE_TOKEN }}
           config-file: release-please-config.json
           manifest-file: .release-please-manifest.json
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         # these if statements ensure that a publication only occurs when
         # a new release is created:
         if: ${{ steps.release.outputs.releases_created == 'true' }}
