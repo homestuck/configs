@@ -1,4 +1,8 @@
-/** @type {import("prettier").Config} */
+/** @typedef {import("prettier").Config} PrettierConfig */
+/** @typedef {import("@ianvs/prettier-plugin-sort-imports").PluginConfig} SortImportsConfig */
+/** @typedef {import("@prettier/plugin-xml")} XMLConfig */
+
+/** @type { PrettierConfig | SortImportsConfig | XMLConfig } */
 const config = {
   arrowParens: 'always',
   bracketSameLine: true,
