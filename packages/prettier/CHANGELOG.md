@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.1](https://github.com/homestuck/configs/compare/prettier-config@v1.2.0...prettier-config@v1.2.1) (2025-12-16)
+
+
+### Bug Fixes
+
+* **prettier:** Change JSDoc type declaration for config, change export file extension from .mjs to .js ([#21](https://github.com/homestuck/configs/issues/21)) ([13f0845](https://github.com/homestuck/configs/commit/13f084580ddb8985a9c30bbd832615d28fbc6438))
+
 ## [1.2.0](https://github.com/homestuck/configs/compare/prettier-config@v1.1.0...prettier-config@v1.2.0) (2025-12-15)
 
 
