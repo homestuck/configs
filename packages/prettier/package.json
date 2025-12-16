@@ -12,9 +12,9 @@
   "author": "Homestuck <support@homestuck.com> (https://homestuck.com)",
   "type": "module",
   "exports": {
-    ".": "./index.mjs"
+    ".": "./index.js"
   },
-  "main": "./index.mjs",
+  "main": "./index.js",
   "scripts": {
     "clean": "rm -rf .turbo node_modules",
     "format": "prettier --check . --ignore-path ../../.gitignore --ignore-path ./.prettierignore",
