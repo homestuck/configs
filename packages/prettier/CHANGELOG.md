@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.2](https://github.com/homestuck/configs/compare/prettier-config@v1.2.1...prettier-config@v1.2.2) (2025-12-16)
+
+
+### Bug Fixes
+
+* **prettier:** Re-adding explicit JSDoc typedefs for plugin deps ([#23](https://github.com/homestuck/configs/issues/23)) ([9ec0506](https://github.com/homestuck/configs/commit/9ec050670861195eb38185f44d637fd775c75eb0))
+
 ## [1.2.1](https://github.com/homestuck/configs/compare/prettier-config@v1.2.0...prettier-config@v1.2.1) (2025-12-16)
 
 
