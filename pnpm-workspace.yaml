@@ -3,8 +3,8 @@ packages:
   - tooling/*
 
 catalog:
-  '@commitlint/cli': '20.2.0'
-  '@commitlint/config-conventional': '20.2.0'
+  '@commitlint/cli': '20.3.1'
+  '@commitlint/config-conventional': '20.3.1'
   '@parcel/packager-ts': '2.16.3'
   '@parcel/transformer-typescript-types': '2.16.3'
   'depcheck': '1.4.7'
@@ -12,9 +12,9 @@ catalog:
   'globals': '16.5.0'
   'husky': '9.1.7'
   'lint-staged': '16.2.7'
-  'npm-check-updates': '19.2.0'
+  'npm-check-updates': '19.3.1'
   'syncpack': '13.0.4'
-  'turbo': '2.6.3'
+  'turbo': '2.7.4'
   'typescript': '5.9.3'
 catalogs:
   eslint9:
@@ -23,8 +23,8 @@ catalogs:
     '@types/eslint': '9.6.1'
     '@types/eslint__js': 9.14.0
     '@types/eslint-plugin-jsx-a11y': 6.10.1
-    '@typescript-eslint/eslint-plugin': '8.49.0'
-    '@typescript-eslint/parser': '8.49.0'
+    '@typescript-eslint/eslint-plugin': '8.53.0'
+    '@typescript-eslint/parser': '8.53.0'
     'eslint': '9.39.2'
     'eslint-config-prettier': '10.1.8'
     'eslint-import-resolver-alias': '1.1.2'
@@ -36,23 +36,23 @@ catalogs:
     'eslint-plugin-react': '7.37.5'
     eslint-plugin-react-compiler: 19.1.0-rc.2
     'eslint-plugin-react-hooks': '7.0.1'
-    'eslint-plugin-react-you-might-not-need-an-effect': '0.7.0'
+    'eslint-plugin-react-you-might-not-need-an-effect': '0.8.5'
     'eslint-plugin-regexp': '2.10.0'
     'eslint-plugin-simple-import-sort': '12.1.1'
-    'eslint-plugin-storybook': '10.1.9'
-    'eslint-plugin-turbo': '2.6.3'
+    'eslint-plugin-storybook': '10.1.11'
+    'eslint-plugin-turbo': '2.7.4'
     'eslint-plugin-unicorn': '62.0.0'
     'eslint-plugin-unused-imports': '4.3.0'
-    'typescript-eslint': '8.49.0'
+    'typescript-eslint': '8.53.0'
   next16:
-    '@next/eslint-plugin-next': '16.0.10'
+    '@next/eslint-plugin-next': '16.1.1'
   node24:
     '@types/node': 24.10.4
   prettier:
     '@ianvs/prettier-plugin-sort-imports': '4.7.0'
     '@prettier/plugin-xml': 3.4.2
     'prettier': '3.7.4'
-    'prettier-plugin-packagejson': 2.5.20
+    'prettier-plugin-packagejson': 2.5.21
     'prettier-plugin-sort-json': 4.1.1
     'prettier-plugin-tailwindcss': 0.7.2
 
