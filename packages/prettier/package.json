@@ -21,17 +21,19 @@
     "typecheck": "tsc --noEmit"
   },
   "prettier": "@homestuck/prettier-config",
+  "dependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "catalog:prettier",
+    "@prettier/plugin-xml": "catalog:prettier",
+    "prettier-plugin-packagejson": "catalog:prettier",
+    "prettier-plugin-sort-json": "catalog:prettier",
+    "prettier-plugin-tailwindcss": "catalog:prettier"
+  },
   "devDependencies": {
     "@homestuck/tsconfig": "workspace:*",
     "@types/node": "catalog:node24",
     "typescript": "catalog:"
   },
   "peerDependencies": {
-    "@ianvs/prettier-plugin-sort-imports": "catalog:prettier",
-    "@prettier/plugin-xml": "catalog:prettier",
-    "prettier": "catalog:prettier",
-    "prettier-plugin-packagejson": "catalog:prettier",
-    "prettier-plugin-sort-json": "catalog:prettier",
-    "prettier-plugin-tailwindcss": "catalog:prettier"
+    "prettier": "catalog:prettier"
   }
 }
