@@ -1,8 +1,4 @@
-/** @typedef {import("prettier").Config} PrettierConfig */
-/** @typedef {import("@ianvs/prettier-plugin-sort-imports").PluginConfig} SortImportsConfig */
-/** @typedef {import("@prettier/plugin-xml")} XMLConfig */
-
-/** @type { PrettierConfig | SortImportsConfig | XMLConfig } */
+/** @type { import("prettier").Config } */
 const config = {
   arrowParens: 'always',
   bracketSameLine: true,
@@ -30,11 +26,11 @@ const config = {
   importOrderTypeScriptVersion: '5.9.3',
   jsonRecursiveSort: true,
   plugins: [
-    '@ianvs/prettier-plugin-sort-imports',
-    '@prettier/plugin-xml',
-    'prettier-plugin-packagejson',
-    'prettier-plugin-sort-json',
-    'prettier-plugin-tailwindcss',
+    import.meta.resolve('@ianvs/prettier-plugin-sort-imports'),
+    import.meta.resolve('@prettier/plugin-xml'),
+    import.meta.resolve('prettier-plugin-packagejson'),
+    import.meta.resolve('prettier-plugin-sort-json'),
+    import.meta.resolve('prettier-plugin-tailwindcss'),
   ],
   printWidth: 80,
   proseWrap: 'preserve',
