@@ -149,6 +149,8 @@ catalogs:
       specifier: 0.7.2
       version: 0.7.2
 
+packageExtensionsChecksum: sha256-JxAI/wTMurXr1aAg2IIq75ZWi5XHPnrZ63n9Tb07HM8=
+
 importers:
 
   .:

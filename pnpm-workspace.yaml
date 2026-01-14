@@ -2,6 +2,15 @@ packages:
   - packages/*
   - tooling/*
 
+packageExtensions:
+  prettier:
+    dependencies:
+    '@ianvs/prettier-plugin-sort-imports': '*'
+    '@prettier/plugin-xml': '*'
+    'prettier-plugin-packagejson': '*'
+    'prettier-plugin-sort-json': '*'
+    'prettier-plugin-tailwindcss': '*'
+
 catalog:
   '@commitlint/cli': 20.2.0
   '@commitlint/config-conventional': 20.2.0
