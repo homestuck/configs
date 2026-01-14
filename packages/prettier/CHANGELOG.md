@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.3](https://github.com/homestuck/configs/compare/prettier-config@v1.2.2...prettier-config@v1.2.3) (2026-01-14)
+
+
+### Bug Fixes
+
+* **prettier:** Deps to peerDeps ([#32](https://github.com/homestuck/configs/issues/32)) ([a421c82](https://github.com/homestuck/configs/commit/a421c823c798935be7afabc1b6ef6ac84f162121))
+
 ## [1.2.2](https://github.com/homestuck/configs/compare/prettier-config@v1.2.1...prettier-config@v1.2.2) (2025-12-16)
 
 
