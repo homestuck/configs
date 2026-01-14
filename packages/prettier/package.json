@@ -14,24 +14,24 @@
   "exports": {
     ".": "./index.js"
   },
-  "main": "./index.js",
+  "main": "index.js",
   "scripts": {
     "clean": "rm -rf .turbo node_modules",
     "format": "prettier --check . --ignore-path ../../.gitignore --ignore-path ./.prettierignore",
     "typecheck": "tsc --noEmit"
   },
   "prettier": "@homestuck/prettier-config",
-  "dependencies": {
+  "devDependencies": {
+    "@homestuck/tsconfig": "workspace:*",
+    "@types/node": "catalog:node24",
+    "typescript": "catalog:"
+  },
+  "peerDependencies": {
     "@ianvs/prettier-plugin-sort-imports": "catalog:prettier",
     "@prettier/plugin-xml": "catalog:prettier",
     "prettier": "catalog:prettier",
     "prettier-plugin-packagejson": "catalog:prettier",
     "prettier-plugin-sort-json": "catalog:prettier",
     "prettier-plugin-tailwindcss": "catalog:prettier"
-  },
-  "devDependencies": {
-    "@homestuck/tsconfig": "workspace:*",
-    "@types/node": "catalog:node24",
-    "typescript": "catalog:"
   }
 }
