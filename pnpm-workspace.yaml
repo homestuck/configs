@@ -2,15 +2,6 @@ packages:
   - packages/*
   - tooling/*
 
-packageExtensions:
-  prettier:
-    dependencies:
-    '@ianvs/prettier-plugin-sort-imports': '*'
-    '@prettier/plugin-xml': '*'
-    'prettier-plugin-packagejson': '*'
-    'prettier-plugin-sort-json': '*'
-    'prettier-plugin-tailwindcss': '*'
-
 catalog:
   '@commitlint/cli': 20.2.0
   '@commitlint/config-conventional': 20.2.0
@@ -65,3 +56,20 @@ catalogs:
     prettier-plugin-packagejson: 2.5.20
     prettier-plugin-sort-json: 4.1.1
     prettier-plugin-tailwindcss: 0.7.2
+
+onlyBuiltDependencies:
+  - '@parcel/watcher'
+  - '@swc/core'
+  - esbuild
+  - lmdb
+  - msgpackr-extract
+  - unrs-resolver
+
+packageExtensions:
+  prettier:
+    '@ianvs/prettier-plugin-sort-imports': '*'
+    '@prettier/plugin-xml': '*'
+    dependencies: null
+    prettier-plugin-packagejson: '*'
+    prettier-plugin-sort-json: '*'
+    prettier-plugin-tailwindcss: '*'
