@@ -67,9 +67,9 @@ onlyBuiltDependencies:
 
 packageExtensions:
   prettier:
-    '@ianvs/prettier-plugin-sort-imports': '*'
-    '@prettier/plugin-xml': '*'
-    dependencies: null
-    prettier-plugin-packagejson: '*'
-    prettier-plugin-sort-json: '*'
-    prettier-plugin-tailwindcss: '*'
+    dependencies:
+      '@ianvs/prettier-plugin-sort-imports': '*'
+      '@prettier/plugin-xml': '*'
+      prettier-plugin-packagejson: '*'
+      prettier-plugin-sort-json: '*'
+      prettier-plugin-tailwindcss: '*'
