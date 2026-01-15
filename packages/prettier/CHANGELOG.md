@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://github.com/homestuck/configs/compare/prettier-config@v1.2.3...prettier-config@v1.3.0) (2026-01-15)
+
+
+### Miscellaneous Chores
+
+* release 1.3.0 ([c010dbb](https://github.com/homestuck/configs/commit/c010dbb267e3d36d33cffd0f9827484b89125f96))
+
 ## [1.2.3](https://github.com/homestuck/configs/compare/prettier-config@v1.2.2...prettier-config@v1.2.3) (2026-01-14)
 
 
