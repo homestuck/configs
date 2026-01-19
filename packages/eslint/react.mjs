@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/no-unsafe-member-access, @typescript-eslint/no-unsafe-argument */
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
 
 // @ts-expect-error - no types
 import pluginJSXA11y from 'eslint-plugin-jsx-a11y'
@@ -11,17 +11,30 @@ import { defineConfig } from 'eslint/config'
 import rootEslintConfig from '@homestuck/eslint-config'
 
 const $config = defineConfig(
-  ...rootEslintConfig,
-  { ...pluginReact.configs.flat.recommended },
-  pluginReactHooks.configs.flat.recommended,
-  pluginReactYouMightNotNeedAnEffect.configs.recommended,
-  pluginReactCompiler.configs.recommended,
+  rootEslintConfig,
+  {
+    ...pluginReact.configs.flat.recommended,
+    name: 'react/recommended',
+  },
+  {
+    ...pluginReactHooks.configs.flat.recommended,
+    name: 'react-hooks/recommended',
+  },
+  {
+    ...pluginReactYouMightNotNeedAnEffect.configs.recommended,
+    name: 'react-you-might-not-need-an-effect/recommended',
+  },
+  {
+    ...pluginReactCompiler.configs.recommended,
+    name: 'react-compiler/recommended',
+  },
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
   pluginJSXA11y.flatConfigs.recommended,
   {
     languageOptions: {
       ...pluginReact.configs.flat.recommended?.languageOptions,
     },
-    name: 'React',
+    name: 'React Settings',
     rules: {
       'jsx-a11y/label-has-associated-control': [
         'error',

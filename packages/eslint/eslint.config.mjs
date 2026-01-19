@@ -1,7 +1,7 @@
 /* eslint-disable import/no-named-as-default-member */
-import eslint from '@eslint/js'
+import js from '@eslint/js'
 import tseslintParser from '@typescript-eslint/parser'
-import eslintConfigPrettier from 'eslint-config-prettier'
+import eslintConfigPrettier from 'eslint-config-prettier/flat'
 import pluginImport from 'eslint-plugin-import'
 import pluginPerfectionist from 'eslint-plugin-perfectionist'
 import pluginRegexp from 'eslint-plugin-regexp'
@@ -9,25 +9,32 @@ import pluginStorybook from 'eslint-plugin-storybook'
 import pluginTurbo from 'eslint-plugin-turbo'
 import pluginUnicorn from 'eslint-plugin-unicorn'
 import pluginUnusedImports from 'eslint-plugin-unused-imports'
-import { defineConfig } from 'eslint/config'
+import { defineConfig, globalIgnores } from 'eslint/config'
 import globals from 'globals'
-import tseslint from 'typescript-eslint'
+import ts from 'typescript-eslint'
 
 const rootEslintConfig = defineConfig(
-  {
-    ignores: ['**/.next', '**/dist', '**/pnpm-lock.yaml', '**/next-env.d.ts'],
-  },
   pluginTurbo.configs['flat/recommended'],
-  eslint.configs.recommended,
-  tseslint.configs.recommendedTypeChecked,
-  tseslint.configs.strictTypeChecked,
-  tseslint.configs.stylisticTypeChecked,
-  pluginPerfectionist.configs['recommended-natural'],
-  pluginRegexp.configs['flat/recommended'],
+  {
+    name: 'eslint/js/recommended',
+    ...js.configs.recommended,
+  },
+  ts.configs.strictTypeChecked,
+  ts.configs.stylisticTypeChecked,
+  {
+    ...pluginPerfectionist.configs['recommended-natural'],
+    name: 'perfectionist/recommended-natural',
+  },
+  { ...pluginRegexp.configs['flat/recommended'], name: 'regexp/recommended' },
   pluginUnicorn.configs.recommended,
   pluginImport.flatConfigs.recommended,
   // @ts-expect-error --- false positive
   pluginStorybook.configs['flat/recommended'],
+  { ...eslintConfigPrettier, name: 'prettier/recommended' },
+  globalIgnores(
+    ['**/.next', '**/dist', '**/pnpm-lock.yaml', '**/next-env.d.ts'],
+    'Global Ignores',
+  ),
   {
     languageOptions: {
       ecmaVersion: 'latest',
@@ -47,7 +54,7 @@ const rootEslintConfig = defineConfig(
     linterOptions: {
       reportUnusedDisableDirectives: true,
     },
-    name: 'Settings',
+    name: 'Global Settings',
     plugins: {
       'unused-imports': pluginUnusedImports,
     },
@@ -73,7 +80,6 @@ const rootEslintConfig = defineConfig(
           partitionByNewLine: false,
         },
       ],
-
       'perfectionist/sort-objects': [
         'error',
         {
@@ -141,7 +147,7 @@ const rootEslintConfig = defineConfig(
         { fixStyle: 'inline-type-imports', prefer: 'type-imports' },
       ],
       '@typescript-eslint/no-empty-function': ['warn'],
-      '@typescript-eslint/no-explicit-any': ['error'],
+      // '@typescript-eslint/no-explicit-any': ['error'],
       '@typescript-eslint/no-misused-promises': [
         2,
         { checksVoidReturn: { attributes: false } },
@@ -159,7 +165,6 @@ const rootEslintConfig = defineConfig(
       ],
     },
   },
-  eslintConfigPrettier,
 )
 
 export default rootEslintConfig
