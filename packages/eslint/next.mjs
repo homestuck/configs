@@ -1,18 +1,23 @@
-import { FlatCompat } from '@eslint/eslintrc'
+import pluginNext from '@next/eslint-plugin-next'
 import { defineConfig } from 'eslint/config'
 
 import reactEslintConfig from '@homestuck/eslint-config/react'
 
-const compat = new FlatCompat({
-  baseDirectory: import.meta.dirname,
-})
-
-const $config = defineConfig([
+const $config = defineConfig(
   reactEslintConfig,
-  // @ts-expect-error - False positive config type mismatch
-  ...compat.config({
-    extends: ['plugin:@next/next/recommended'],
-  }),
-])
+  {
+    name: '@next/next/recommended',
+    plugins: {
+      // @ts-expect-error --- false positive from NextJS custom typedef
+      '@next/next': pluginNext,
+    },
+    rules: {
+      ...pluginNext.configs.recommended.rules,
+    },
+  },
+  {
+    name: 'Next Settings',
+  },
+)
 
 export default $config

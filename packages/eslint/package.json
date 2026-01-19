@@ -38,6 +38,9 @@
   "scripts": {
     "clean": "rm -rf .turbo node_modules",
     "format": "prettier --check . --ignore-path ../../.gitignore --ignore-path ./.prettierignore",
+    "inspect:eslint": "eslint --inspect-config --config ./eslint.config.mjs",
+    "inspect:next": "eslint --inspect-config --config ./next.mjs",
+    "inspect:react": "eslint --inspect-config --config ./react.mjs",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit"
   },
