@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.1](https://github.com/homestuck/configs/compare/prettier-config@v1.3.0...prettier-config@v1.3.1) (2026-01-19)
+
+
+### Bug Fixes
+
+* **prettier:** Added missing rules to importOrder ([#42](https://github.com/homestuck/configs/issues/42)) ([c0c6ba9](https://github.com/homestuck/configs/commit/c0c6ba9bafd83354ddf67654e3abb2947545f505))
+
 ## [1.3.0](https://github.com/homestuck/configs/compare/prettier-config@v1.2.3...prettier-config@v1.3.0) (2026-01-15)
 
 

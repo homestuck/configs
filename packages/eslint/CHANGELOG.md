@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0](https://github.com/homestuck/configs/compare/eslint-config@v1.3.0...eslint-config@v1.4.0) (2026-01-19)
+
+
+### Features
+
+* **eslint:** Revised eslint configs to be cleaner, adding package script for config inspector ([#41](https://github.com/homestuck/configs/issues/41)) ([4156bb3](https://github.com/homestuck/configs/commit/4156bb30d003144676a7d6319f8dfc03f66ecfe6))
+
 ## [1.3.0](https://github.com/homestuck/configs/compare/eslint-config@v1.2.0...eslint-config@v1.3.0) (2026-01-15)
 
 
