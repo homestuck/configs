@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.5.1](https://github.com/homestuck/configs/compare/eslint-config@v1.5.0...eslint-config@v1.5.1) (2026-01-20)
+
+
+### Miscellaneous Chores
+
+* release 1.5.1 ([afdbfd6](https://github.com/homestuck/configs/commit/afdbfd65edeb63f455a91f5e38503ee0c1abbafa))
+* release 1.6.0 ([2ad4543](https://github.com/homestuck/configs/commit/2ad4543fd5e01623dc05cc7e86b9742ba1bb3b37))
+
 ## [1.5.0](https://github.com/homestuck/configs/compare/eslint-config@v1.4.0...eslint-config@v1.5.0) (2026-01-20)
 
 
