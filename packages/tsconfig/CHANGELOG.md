@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.0](https://github.com/homestuck/configs/compare/tsconfig@v1.3.0...tsconfig@v1.5.0) (2026-01-20)
+
+
+### Miscellaneous Chores
+
+* release 1.5.0 ([6f23a21](https://github.com/homestuck/configs/commit/6f23a21179bf1a4c2267478248b64158670efab6))
+
 ## [1.3.0](https://github.com/homestuck/configs/compare/tsconfig@v1.1.0...tsconfig@v1.3.0) (2026-01-15)
 
 
