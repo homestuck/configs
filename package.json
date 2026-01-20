@@ -1,7 +1,7 @@
 {
   "name": "@homestuck/configs",
   "private": true,
-  "description": "Monorepo of shared tooling configurations maintained by Homestuck Inc., et al.",
+  "description": "A monorepo of shared tooling configurations maintained by Homestuck Inc., et al.",
   "type": "module",
   "scripts": {
     "build": "turbo build",
