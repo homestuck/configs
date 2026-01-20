@@ -3,7 +3,6 @@
 // @ts-expect-error - no types
 import pluginJSXA11y from 'eslint-plugin-jsx-a11y'
 import pluginReact from 'eslint-plugin-react'
-import pluginReactCompiler from 'eslint-plugin-react-compiler'
 import pluginReactHooks from 'eslint-plugin-react-hooks'
 import pluginReactYouMightNotNeedAnEffect from 'eslint-plugin-react-you-might-not-need-an-effect'
 import { defineConfig } from 'eslint/config'
@@ -23,10 +22,6 @@ const $config = defineConfig(
   {
     ...pluginReactYouMightNotNeedAnEffect.configs.recommended,
     name: 'react-you-might-not-need-an-effect/recommended',
-  },
-  {
-    ...pluginReactCompiler.configs.recommended,
-    name: 'react-compiler/recommended',
   },
   // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
   pluginJSXA11y.flatConfigs.recommended,
