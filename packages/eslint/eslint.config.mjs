@@ -1,7 +1,7 @@
 /* eslint-disable import/no-named-as-default-member */
 import js from '@eslint/js'
-import tseslintParser from '@typescript-eslint/parser'
-import eslintConfigPrettier from 'eslint-config-prettier/flat'
+import tsParser from '@typescript-eslint/parser'
+import prettierConfig from 'eslint-config-prettier/flat'
 import pluginImport from 'eslint-plugin-import'
 import pluginPerfectionist from 'eslint-plugin-perfectionist'
 import pluginRegexp from 'eslint-plugin-regexp'
@@ -30,7 +30,7 @@ const rootEslintConfig = defineConfig(
   pluginImport.flatConfigs.recommended,
   // @ts-expect-error --- false positive
   pluginStorybook.configs['flat/recommended'],
-  { ...eslintConfigPrettier, name: 'prettier/recommended' },
+  { ...prettierConfig, name: 'prettier/recommended' },
   globalIgnores(
     ['**/.next', '**/dist', '**/pnpm-lock.yaml', '**/next-env.d.ts'],
     'Global Ignores',
@@ -41,7 +41,7 @@ const rootEslintConfig = defineConfig(
       globals: {
         ...globals.node,
       },
-      parser: tseslintParser,
+      parser: tsParser,
       parserOptions: {
         ecmaFeatures: {
           jsx: true,
