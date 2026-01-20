@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.0](https://github.com/homestuck/configs/compare/prettier-config@v1.5.2...prettier-config@v1.6.0) (2026-01-20)
+
+
+### Features
+
+* Adding README documents for all packages ([#50](https://github.com/homestuck/configs/issues/50)) ([71534f9](https://github.com/homestuck/configs/commit/71534f94200c6a908bd31ca1c3b9526e975124ad))
+
 ## [1.5.2](https://github.com/homestuck/configs/compare/prettier-config@v1.5.1...prettier-config@v1.5.2) (2026-01-20)
 
 
