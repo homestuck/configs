@@ -4,13 +4,14 @@ on:
     workflows: [CI]
     types: [completed]
     branches: [main]
-name: release-please
+name: 'Trigger Release'
 permissions:
   contents: write
   pull-requests: write
 jobs:
   release-please:
     runs-on: ubuntu-latest
+    environment: release
     steps:
       - uses: googleapis/release-please-action@v4
         id: release
@@ -28,15 +29,15 @@ jobs:
       - name: Set npm access token
         run: pnpm set "//registry.npmjs.org/:_authToken=${{secrets.NPMJS_HOMESTUCK_ACCESS_TOKEN}}"
         if: ${{ steps.release.outputs.releases_created == 'true' }}
-      - name: 'Publish Eslint Config'
+      - name: 'Publish @homestuck/eslint-config'
         working-directory: packages/eslint
         run: pnpm publish --access public --no-git-checks
         if: ${{ steps.release.outputs['packages/eslint--release_created'] }}
-      - name: 'Publish Prettier Config'
+      - name: 'Publish @homestuck/prettier-config'
         working-directory: packages/prettier
         run: pnpm publish --access public --no-git-checks
         if: ${{ steps.release.outputs['packages/prettier--release_created'] }}
-      - name: 'Publish Typescript Config'
+      - name: 'Publish @homestuck/tsconfig'
         working-directory: packages/tsconfig
         run: pnpm publish --access public --no-git-checks
         if: ${{ steps.release.outputs['packages/tsconfig--release_created'] }}
