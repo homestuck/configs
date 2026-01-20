@@ -1,6 +1,6 @@
 {
   "name": "@homestuck/eslint-config",
-  "version": "1.5.1",
+  "version": "1.5.2",
   "private": false,
   "description": "Baseline ESLint configs used and maintained by Homestuck Inc., et al.",
   "repository": {
