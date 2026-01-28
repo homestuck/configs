@@ -9,6 +9,7 @@ import { defineConfig } from 'eslint/config'
 
 import rootEslintConfig from '@homestuck/eslint-config'
 
+/** @type {import('eslint').Linter.Config[]} */
 const $config = defineConfig(
   rootEslintConfig,
   {

@@ -13,6 +13,7 @@ import { defineConfig, globalIgnores } from 'eslint/config'
 import globals from 'globals'
 import ts from 'typescript-eslint'
 
+/** @type {import('eslint').Linter.Config[]} */
 const rootEslintConfig = defineConfig(
   pluginTurbo.configs['flat/recommended'],
   {
