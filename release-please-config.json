@@ -3,6 +3,9 @@
   "include-component-in-tag": true,
   "include-v-in-tag": true,
   "packages": {
+    "packages/biome": {
+      "release-type": "node"
+    },
     "packages/eslint": {
       "release-type": "node"
     },

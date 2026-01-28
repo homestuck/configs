@@ -27,6 +27,7 @@
   "devDependencies": {
     "@commitlint/cli": "^20.3.1",
     "@commitlint/config-conventional": "^20.3.1",
+    "@homestuck/biome-config": "workspace:*",
     "@homestuck/eslint-config": "workspace:*",
     "@homestuck/prettier-config": "workspace:*",
     "@homestuck/tsconfig": "workspace:*",

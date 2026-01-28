@@ -1,0 +1,17 @@
+{
+  "name": "@homestuck/biome-config",
+  "version": "1.7.0",
+  "private": false,
+  "description": "Baseline Biome configs used and maintained by Homestuck Inc., et al.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/homestuck/configs.git",
+    "directory": "packages/biome"
+  },
+  "license": "MIT",
+  "author": "Homestuck <support@homestuck.com> (https://homestuck.com)",
+  "type": "module",
+  "exports": {
+    "./base": "./biome.json"
+  }
+}

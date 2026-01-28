@@ -14,6 +14,7 @@ This monorepo contains the following shareable configuration packages:
 
 | Package                                             | Version                                                                                                                                                   | Description                      |
 | --------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------- |
+| [`@homestuck/biome-config`](./packages/biome)       | [![NPM Version](https://img.shields.io/npm/v/@homestuck/biome-config?style=flat-square)](https://www.npmjs.com/package/@homestuck/biome-config)           | Shared Biome configurations      |
 | [`@homestuck/eslint-config`](./packages/eslint)     | [![NPM Version](https://img.shields.io/npm/v/@homestuck/eslint-config?style=flat-square)](https://www.npmjs.com/package/@homestuck/eslint-config)         | Shared ESLint configurations     |
 | [`@homestuck/prettier-config`](./packages/prettier) | [![NPM Version](https://img.shields.io/npm/v/%40homestuck%2Fprettier-config?style=flat-square)](https://www.npmjs.com/package/@homestuck/prettier-config) | Shared Prettier configuration    |
 | [`@homestuck/tsconfig`](./packages/tsconfig)        | [![NPM Version](https://img.shields.io/npm/v/@homestuck/tsconfig?style=flat-square)](https://www.npmjs.com/package/@homestuck/tsconfig)                   | Shared TypeScript configurations |
