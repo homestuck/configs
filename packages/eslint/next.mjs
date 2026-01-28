@@ -4,7 +4,7 @@ import { defineConfig } from 'eslint/config'
 import reactEslintConfig from '@homestuck/eslint-config/react'
 
 /** @type {import('eslint').Linter.Config[]} */
-const $config = defineConfig(
+export default defineConfig(
   reactEslintConfig,
   {
     name: '@next/next/recommended',
@@ -20,5 +20,3 @@ const $config = defineConfig(
     name: 'Next Settings',
   },
 )
-
-export default $config

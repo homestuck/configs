@@ -14,7 +14,7 @@ import globals from 'globals'
 import ts from 'typescript-eslint'
 
 /** @type {import('eslint').Linter.Config[]} */
-const rootEslintConfig = defineConfig(
+export default defineConfig(
   pluginTurbo.configs['flat/recommended'],
   {
     name: 'eslint/js/recommended',
@@ -26,7 +26,7 @@ const rootEslintConfig = defineConfig(
     ...pluginPerfectionist.configs['recommended-natural'],
     name: 'perfectionist/recommended-natural',
   },
-  { ...pluginRegexp.configs['flat/recommended'], name: 'regexp/recommended' },
+  { ...pluginRegexp.configs.recommended, name: 'regexp/recommended' },
   pluginUnicorn.configs.recommended,
   pluginImport.flatConfigs.recommended,
   // @ts-expect-error --- false positive
@@ -148,7 +148,7 @@ const rootEslintConfig = defineConfig(
         { fixStyle: 'inline-type-imports', prefer: 'type-imports' },
       ],
       '@typescript-eslint/no-empty-function': ['warn'],
-      // '@typescript-eslint/no-explicit-any': ['error'],
+      '@typescript-eslint/no-explicit-any': ['error'],
       '@typescript-eslint/no-misused-promises': [
         2,
         { checksVoidReturn: { attributes: false } },
@@ -167,5 +167,3 @@ const rootEslintConfig = defineConfig(
     },
   },
 )
-
-export default rootEslintConfig

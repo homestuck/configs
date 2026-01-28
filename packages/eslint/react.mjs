@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unsafe-member-access */
-
 // @ts-expect-error - no types
 import pluginJSXA11y from 'eslint-plugin-jsx-a11y'
 import pluginReact from 'eslint-plugin-react'
@@ -10,7 +8,7 @@ import { defineConfig } from 'eslint/config'
 import rootEslintConfig from '@homestuck/eslint-config'
 
 /** @type {import('eslint').Linter.Config[]} */
-const $config = defineConfig(
+export default defineConfig(
   rootEslintConfig,
   {
     ...pluginReact.configs.flat.recommended,
@@ -24,7 +22,7 @@ const $config = defineConfig(
     ...pluginReactYouMightNotNeedAnEffect.configs.recommended,
     name: 'react-you-might-not-need-an-effect/recommended',
   },
-  // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-argument, @typescript-eslint/no-unsafe-member-access
   pluginJSXA11y.flatConfigs.recommended,
   {
     languageOptions: {
@@ -59,5 +57,3 @@ const $config = defineConfig(
     },
   },
 )
-
-export default $config

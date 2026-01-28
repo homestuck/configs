@@ -12,27 +12,9 @@
   "author": "Homestuck <support@homestuck.com> (https://homestuck.com)",
   "type": "module",
   "exports": {
-    ".": {
-      "types": "./eslint.config.mjs",
-      "import": "./eslint.config.mjs",
-      "node": "./eslint.config.mjs",
-      "require": "./eslint.config.mjs",
-      "default": "./eslint.config.mjs"
-    },
-    "./next": {
-      "types": "./next.mjs",
-      "import": "./next.mjs",
-      "node": "./next.mjs",
-      "require": "./next.mjs",
-      "default": "./next.mjs"
-    },
-    "./react": {
-      "types": "./react.mjs",
-      "import": "./react.mjs",
-      "node": "./react.mjs",
-      "require": "./react.mjs",
-      "default": "./react.mjs"
-    }
+    ".": "./eslint.config.mjs",
+    "./next": "./next.mjs",
+    "./react": "./react.mjs"
   },
   "main": "./eslint.config.mjs",
   "scripts": {
