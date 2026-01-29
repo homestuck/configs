@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.1](https://github.com/homestuck/configs/compare/prettier-config@v1.7.0...prettier-config@v1.7.1) (2026-01-29)
+
+
+### Bug Fixes
+
+* **prettier:** Updating type imports and typedefs ([#63](https://github.com/homestuck/configs/issues/63)) ([42199ea](https://github.com/homestuck/configs/commit/42199eaf442043ea7f23ac806a73bdb88c1b0853))
+
 ## [1.7.0](https://github.com/homestuck/configs/compare/prettier-config@v1.6.0...prettier-config@v1.7.0) (2026-01-28)
 
 
