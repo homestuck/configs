@@ -1,5 +1,13 @@
-/** @type { import("prettier").Config } */
-const config = {
+/**
+ * @import { Config as PrettierConfig } from "prettier"
+ * @import { PluginConfig as SortImportsConfig } from "@ianvs/prettier-plugin-sort-imports"
+ * @import { SortJsonOptions as SortJsonConfig } from "prettier-plugin-sort-json"
+ * @import { PluginOptions as TailwindCSSConfig }  from "prettier-plugin-tailwindcss"
+ * @typedef { PrettierConfig & SortImportsConfig & SortJsonConfig & TailwindCSSConfig } HomestuckPrettierConfig
+ * */
+
+/** @type HomestuckPrettierConfig */
+export default {
   arrowParens: 'always',
   bracketSameLine: true,
   bracketSpacing: true,
@@ -40,6 +48,7 @@ const config = {
   semi: false,
   singleQuote: true,
   tabWidth: 2,
+  tailwindAttributes: ['class', 'className', 'ngClass', 'class:list'],
   trailingComma: 'all',
   useTabs: false,
   xmlQuoteAttributes: 'double',
@@ -47,5 +56,3 @@ const config = {
   xmlSortAttributesByKey: true,
   xmlWhitespaceSensitivity: 'preserve',
 }
-
-export default config
