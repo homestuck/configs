@@ -1,6 +1,6 @@
 {
   "name": "@homestuck/prettier-config",
-  "version": "1.7.0",
+  "version": "1.7.1",
   "private": false,
   "description": "Baseline Prettier config used and maintained by Homestuck Inc., et al.",
   "repository": {
