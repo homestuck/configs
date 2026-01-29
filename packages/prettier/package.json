@@ -24,6 +24,7 @@
   "devDependencies": {
     "@homestuck/tsconfig": "workspace:*",
     "@types/node": "catalog:",
+    "storybook": "^10.2.1",
     "typescript": "catalog:"
   },
   "peerDependencies": {
