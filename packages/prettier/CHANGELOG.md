@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.2](https://github.com/homestuck/configs/compare/prettier-config@v1.7.1...prettier-config@v1.7.2) (2026-01-29)
+
+
+### Bug Fixes
+
+* **prettier:** Add tailwindFunctions config ([#65](https://github.com/homestuck/configs/issues/65)) ([2a712c1](https://github.com/homestuck/configs/commit/2a712c1abb34c6684ce4b96e02ed7ede7a610768))
+
 ## [1.7.1](https://github.com/homestuck/configs/compare/prettier-config@v1.7.0...prettier-config@v1.7.1) (2026-01-29)
 
 
