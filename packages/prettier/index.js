@@ -49,6 +49,7 @@ export default {
   singleQuote: true,
   tabWidth: 2,
   tailwindAttributes: ['class', 'className', 'ngClass', 'class:list'],
+  tailwindFunctions: ['clsx', 'cn', 'cva', 'tw', 'twMerge'],
   trailingComma: 'all',
   useTabs: false,
   xmlQuoteAttributes: 'double',
