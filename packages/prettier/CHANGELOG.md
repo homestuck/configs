@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.3](https://github.com/homestuck/configs/compare/prettier-config@v1.7.2...prettier-config@v1.7.3) (2026-02-11)
+
+
+### Bug Fixes
+
+* **prettier:** Update sort imports to handle more internal package name options ([#79](https://github.com/homestuck/configs/issues/79)) ([a0b49db](https://github.com/homestuck/configs/commit/a0b49db0c5f6d95a1e7711dca435b4dbc08404ec))
+
 ## [1.7.2](https://github.com/homestuck/configs/compare/prettier-config@v1.7.1...prettier-config@v1.7.2) (2026-01-29)
 
 
