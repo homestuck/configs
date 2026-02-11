@@ -20,7 +20,6 @@ export default {
     '',
     '<TYPES>^@homestuck',
     '^@homestuck/(.*)$',
-    '',
     '<TYPES>^(@local|@internal|@workspace)',
     '^(@local|@internal|@workspace)/(.*)$',
     '',
