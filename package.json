@@ -25,8 +25,8 @@
   },
   "prettier": "@homestuck/prettier-config",
   "devDependencies": {
-    "@commitlint/cli": "^20.5.0",
-    "@commitlint/config-conventional": "^20.5.0",
+    "@commitlint/cli": "^20.5.3",
+    "@commitlint/config-conventional": "^20.5.3",
     "@homestuck/eslint-config": "workspace:*",
     "@homestuck/prettier-config": "workspace:*",
     "@homestuck/tsconfig": "workspace:*",
@@ -40,7 +40,7 @@
     "npm-check-updates": "^19.6.5",
     "prettier": "catalog:",
     "syncpack": "^13.0.4",
-    "turbo": "^2.8.20",
+    "turbo": "^2.9.7",
     "typescript": "catalog:"
   },
   "packageManager": "pnpm@10.33.0+sha512.10568bb4a6afb58c9eb3630da90cc9516417abebd3fabbe6739f0ae795728da1491e9db5a544c76ad8eb7570f5c4bb3d6c637b2cb41bfdcdb47fa823c8649319",
