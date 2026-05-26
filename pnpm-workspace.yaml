@@ -1,17 +1,32 @@
+
+
+allowBuilds:
+  '@parcel/watcher': true
+  '@swc/core': true
+  esbuild: true
+  lmdb: true
+  msgpackr-extract: true
+  unrs-resolver: true
+
+catalog:
+  '@types/node': ^25.9.1
+  eslint: ^10.4.0
+  prettier: ^3.8.3
+  typescript: ^6.0.3
+
 packages:
   - packages/*
   - tooling/*
 
-catalog:
-  '@types/node': ^25.2.0
-  eslint: ^9.39.2
-  prettier: ^3.8.1
-  typescript: ^5.9.3
-
-onlyBuiltDependencies:
-  - '@parcel/watcher'
-  - '@swc/core'
-  - esbuild
-  - lmdb
-  - msgpackr-extract
-  - unrs-resolver
+minimumReleaseAgeExclude:
+  - '@typescript-eslint/eslint-plugin@8.60.0'
+  - '@typescript-eslint/parser@8.60.0'
+  - '@typescript-eslint/project-service@8.60.0'
+  - '@typescript-eslint/scope-manager@8.60.0'
+  - '@typescript-eslint/tsconfig-utils@8.60.0'
+  - '@typescript-eslint/type-utils@8.60.0'
+  - '@typescript-eslint/types@8.60.0'
+  - '@typescript-eslint/typescript-estree@8.60.0'
+  - '@typescript-eslint/utils@8.60.0'
+  - '@typescript-eslint/visitor-keys@8.60.0'
+  - typescript-eslint@8.60.0
