@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
     "jsx": "preserve",
     "lib": ["ES2024", "DOM", "DOM.Iterable"],
     "module": "ESNext",

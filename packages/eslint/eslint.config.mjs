@@ -15,6 +15,7 @@ import ts from 'typescript-eslint'
 
 /** @type {import('eslint').Linter.Config[]} */
 export default defineConfig(
+  // @ts-expect-error --- False positive
   pluginTurbo.configs['flat/recommended'],
   {
     name: 'eslint/js/recommended',
@@ -29,7 +30,6 @@ export default defineConfig(
   { ...pluginRegexp.configs.recommended, name: 'regexp/recommended' },
   pluginUnicorn.configs.recommended,
   pluginImport.flatConfigs.recommended,
-  // @ts-expect-error --- false positive
   pluginStorybook.configs['flat/recommended'],
   { ...prettierConfig, name: 'prettier/recommended' },
   globalIgnores(
