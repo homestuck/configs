@@ -1,5 +1,5 @@
 {
-  "$schema": "https://turborepo.org/schema.json",
+  "$schema": "https://turborepo.dev/schema.json",
   "globalDependencies": ["**/.env", "**/.env.development", "**/.env.prod"],
   "globalEnv": ["CI", "NODE_ENV", "SKIP_ENV_VALIDATION", "npm_lifecycle_event"],
   "remoteCache": {

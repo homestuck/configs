@@ -24,32 +24,30 @@
     "typecheck": "turbo typecheck --continue"
   },
   "prettier": "@homestuck/prettier-config",
-  "devDependencies": {
-    "@commitlint/cli": "^21.0.1",
-    "@commitlint/config-conventional": "^21.0.1",
+  "dependencies": {
     "@homestuck/eslint-config": "workspace:*",
     "@homestuck/prettier-config": "workspace:*",
-    "@homestuck/tsconfig": "workspace:*",
-    "@ianvs/prettier-plugin-sort-imports": "^4.7.1",
-    "@parcel/packager-ts": "^2.16.4",
-    "@parcel/transformer-typescript-types": "^2.16.4",
-    "@prettier/plugin-xml": "^3.4.2",
+    "@homestuck/tsconfig": "workspace:*"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "catalog:commitlint",
+    "@commitlint/config-conventional": "catalog:commitlint",
+    "@ianvs/prettier-plugin-sort-imports": "catalog:prettier",
+    "@prettier/plugin-xml": "catalog:prettier",
     "@types/node": "catalog:",
-    "depcheck": "^1.4.7",
-    "eslint": "catalog:",
-    "glob": "^13.0.6",
-    "husky": "^9.1.7",
-    "lint-staged": "^17.0.5",
-    "npm-check-updates": "^22.2.1",
-    "prettier": "catalog:",
-    "prettier-plugin-packagejson": "^3.0.2",
-    "prettier-plugin-sort-json": "^4.2.0",
-    "prettier-plugin-tailwindcss": "^0.8.0",
-    "syncpack": "^15.3.1",
-    "turbo": "^2.9.14",
+    "eslint": "catalog:eslint",
+    "glob": "catalog:",
+    "husky": "catalog:",
+    "lint-staged": "catalog:",
+    "prettier": "catalog:prettier",
+    "prettier-plugin-packagejson": "catalog:prettier",
+    "prettier-plugin-sort-json": "catalog:prettier",
+    "prettier-plugin-tailwindcss": "catalog:prettier",
+    "syncpack": "catalog:",
+    "turbo": "catalog:",
     "typescript": "catalog:"
   },
-  "packageManager": "pnpm@11.3.0+sha512.2c403d6594527287672b1f7056343a1f7c3634036a67ffabfcc2b3d7595d843768f8787148d1b57cf7956c90606bbd192857c363af19e96d2d0ec9ec5741d215",
+  "packageManager": "pnpm@11.15.1+sha512.81350b07e53c9538a02f1f2303b4290fa2d7be04e56e2a970c4cc4b417dc761de196edabd49d55c7dc9580db81007c44143e4e3d7e462b3000d23c255122d065",
   "engines": {
     "node": ">=24.10.x"
   }
