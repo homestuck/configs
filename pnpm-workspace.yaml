@@ -10,8 +10,8 @@ allowBuilds:
 
 catalog:
   '@types/node': ^25.9.1
-  eslint: ^10.4.0
-  prettier: ^3.8.3
+  eslint: ^10.7.0
+  prettier: ^3.9.6
   typescript: ^6.0.3
 
 packages:
