@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.8.1](https://github.com/homestuck/configs/compare/prettier-config@v1.7.3...prettier-config@v1.8.1) (2026-08-05)
+
+
+### Miscellaneous Chores
+
+* release 1.8.1 ([efc4f14](https://github.com/homestuck/configs/commit/efc4f144caa2a1dd735f0dd3bc207baff45a021b))
+
 ## [1.7.3](https://github.com/homestuck/configs/compare/prettier-config@v1.7.2...prettier-config@v1.7.3) (2026-02-11)
 
 
