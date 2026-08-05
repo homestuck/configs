@@ -24,6 +24,7 @@
     "**/node_modules": true
   },
   "files.insertFinalNewline": true,
+  "js/ts.tsdk.path": "node_modules/typescript/lib",
   "prettier.experimentalTernaries": true,
   "tailwindCSS.classAttributes": [
     "class",
@@ -31,13 +32,7 @@
     "ngClass",
     "class:list"
   ],
-  "tailwindCSS.classFunctions": [
-    "clsx",
-    "cn",
-    "cva",
-    "tw",
-    "twMerge"
-  ],
+  "tailwindCSS.classFunctions": ["clsx", "cn", "cva", "tw", "twMerge"],
   "typescript.enablePromptUseWorkspaceTsdk": true,
   "typescript.preferences.autoImportFileExcludePatterns": [],
   "typescript.tsdk": "node_modules/typescript/lib"
