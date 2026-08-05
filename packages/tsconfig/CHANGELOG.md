@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.8.1](https://github.com/homestuck/configs/compare/tsconfig@v1.7.0...tsconfig@v1.8.1) (2026-08-05)
+
+
+### Miscellaneous Chores
+
+* release 1.8.1 ([efc4f14](https://github.com/homestuck/configs/commit/efc4f144caa2a1dd735f0dd3bc207baff45a021b))
+
 ## [1.7.0](https://github.com/homestuck/configs/compare/tsconfig@v1.6.0...tsconfig@v1.7.0) (2026-01-28)
 
 
