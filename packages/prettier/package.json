@@ -22,14 +22,20 @@
   },
   "prettier": "@homestuck/prettier-config",
   "devDependencies": {
-    "storybook": "^10.4.1"
+    "@ianvs/prettier-plugin-sort-imports": "catalog:prettier",
+    "@prettier/plugin-xml": "catalog:prettier",
+    "prettier": "catalog:prettier",
+    "prettier-plugin-packagejson": "catalog:prettier",
+    "prettier-plugin-sort-json": "catalog:prettier",
+    "prettier-plugin-tailwindcss": "catalog:prettier",
+    "storybook": "catalog:"
   },
   "peerDependencies": {
-    "@ianvs/prettier-plugin-sort-imports": "^4.7.1",
-    "@prettier/plugin-xml": "^3.4.2",
-    "prettier": "catalog:",
-    "prettier-plugin-packagejson": "^3.0.2",
-    "prettier-plugin-sort-json": "^4.2.0",
-    "prettier-plugin-tailwindcss": "^0.8.0"
+    "@ianvs/prettier-plugin-sort-imports": "catalog:prettier",
+    "@prettier/plugin-xml": "catalog:prettier",
+    "prettier": "catalog:prettier",
+    "prettier-plugin-packagejson": "catalog:prettier",
+    "prettier-plugin-sort-json": "catalog:prettier",
+    "prettier-plugin-tailwindcss": "catalog:prettier"
   }
 }
