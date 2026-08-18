@@ -9,26 +9,26 @@ allowBuilds:
 autoInstallPeers: true
 
 catalog:
-  '@types/node': ^26.1.2
+  '@types/node': ^26.2.0
   'glob': ^13.0.6
   'globals': ^17.9.0
   'husky': ^9.1.7
   'lint-staged': ^17.3.0
-  'storybook': ^10.5.6
-  'syncpack': ^15.3.2
-  'turbo': ^2.10.8
+  'storybook': ^10.5.8
+  'syncpack': ^15.3.3
+  'turbo': ^2.10.10
   'typescript': ^6.0.3
 
 catalogs:
   commitlint:
     '@commitlint/cli': '^21.2.1'
-    '@commitlint/config-conventional': '^21.2.0'
+    '@commitlint/config-conventional': '^21.2.2'
   eslint:
     '@types/eslint': '^9.6.1'
     '@eslint/eslintrc': '^3.3.6'
     '@eslint/js': '^9.39.5'
-    '@next/eslint-plugin-next': '^16.3.0'
-    '@typescript-eslint/eslint-plugin': '^8.66.0'
+    '@next/eslint-plugin-next': '^16.3.1'
+    '@typescript-eslint/eslint-plugin': '^8.67.0'
     'eslint-config-prettier': '^10.1.8'
     'eslint-import-resolver-alias': '^1.1.2'
     'eslint-import-resolver-typescript': '^4.4.5'
@@ -39,14 +39,14 @@ catalogs:
     'eslint-plugin-react': '^7.37.5'
     'eslint-plugin-react-hooks': '^7.1.1'
     'eslint-plugin-react-you-might-not-need-an-effect': '^1.0.1'
-    'eslint-plugin-regexp': '^3.1.1'
+    'eslint-plugin-regexp': '^3.2.0'
     'eslint-plugin-simple-import-sort': '^14.0.0'
-    'eslint-plugin-storybook': '^10.5.6'
-    'eslint-plugin-turbo': ^2.10.8
+    'eslint-plugin-storybook': '^10.5.8'
+    'eslint-plugin-turbo': ^2.10.10
     'eslint-plugin-unicorn': ^65.0.1
     'eslint-plugin-unused-imports': '^4.4.1'
-    '@typescript-eslint/parser': '^8.66.0'
-    'typescript-eslint': '^8.66.0'
+    '@typescript-eslint/parser': '^8.67.0'
+    'typescript-eslint': '^8.67.0'
     'eslint': ^9.39.5
   prettier:
     '@ianvs/prettier-plugin-sort-imports': '^4.7.1'
