@@ -9,49 +9,49 @@ allowBuilds:
 autoInstallPeers: true
 
 catalog:
-  '@types/node': ^26.1.2
+  '@types/node': ^26.6.5
   'glob': ^13.0.6
-  'globals': ^17.9.0
+  'globals': ^17.13.0
   'husky': ^9.1.7
-  'lint-staged': ^17.3.0
-  'storybook': ^10.5.6
-  'syncpack': ^15.3.2
-  'turbo': ^2.10.8
+  'lint-staged': ^17.6.0
+  'storybook': ^10.6.2
+  'syncpack': ^15.3.3
+  'turbo': ^2.11.8
   'typescript': ^6.0.3
 
 catalogs:
   commitlint:
-    '@commitlint/cli': '^21.2.1'
-    '@commitlint/config-conventional': '^21.2.0'
+    '@commitlint/cli': '^21.2.3'
+    '@commitlint/config-conventional': '^21.2.3'
   eslint:
     '@types/eslint': '^9.6.1'
-    '@eslint/eslintrc': '^3.3.6'
+    '@eslint/eslintrc': '^3.3.7'
     '@eslint/js': '^9.39.5'
-    '@next/eslint-plugin-next': '^16.3.0'
-    '@typescript-eslint/eslint-plugin': '^8.66.0'
+    '@next/eslint-plugin-next': '^16.4.2'
+    '@typescript-eslint/eslint-plugin': '^8.71.2'
     'eslint-config-prettier': '^10.1.8'
     'eslint-import-resolver-alias': '^1.1.2'
     'eslint-import-resolver-typescript': '^4.4.5'
     'eslint-plugin-import': '^2.32.0'
     'eslint-plugin-jsx-a11y': '^6.10.2'
-    'eslint-plugin-perfectionist': '^5.10.1'
-    'eslint-plugin-prettier': '^5.5.6'
+    'eslint-plugin-perfectionist': '^5.12.1'
+    'eslint-plugin-prettier': '^5.5.7'
     'eslint-plugin-react': '^7.37.5'
     'eslint-plugin-react-hooks': '^7.1.1'
-    'eslint-plugin-react-you-might-not-need-an-effect': '^1.0.1'
-    'eslint-plugin-regexp': '^3.1.1'
+    'eslint-plugin-react-you-might-not-need-an-effect': '^1.0.2'
+    'eslint-plugin-regexp': '^3.3.1'
     'eslint-plugin-simple-import-sort': '^14.0.0'
-    'eslint-plugin-storybook': '^10.5.6'
-    'eslint-plugin-turbo': ^2.10.8
+    'eslint-plugin-storybook': '^10.6.2'
+    'eslint-plugin-turbo': ^2.11.8
     'eslint-plugin-unicorn': ^65.0.1
     'eslint-plugin-unused-imports': '^4.4.1'
-    '@typescript-eslint/parser': '^8.66.0'
-    'typescript-eslint': '^8.66.0'
+    '@typescript-eslint/parser': '^8.71.2'
+    'typescript-eslint': '^8.71.2'
     'eslint': ^9.39.5
   prettier:
     '@ianvs/prettier-plugin-sort-imports': '^4.7.1'
     '@prettier/plugin-xml': '^3.4.2'
-    'prettier': ^3.9.6
+    'prettier': ^3.9.10
     'prettier-plugin-packagejson': '^3.0.2'
     'prettier-plugin-sort-json': '^4.2.0'
     'prettier-plugin-tailwindcss': '^0.8.1'
